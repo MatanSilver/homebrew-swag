@@ -3,6 +3,7 @@ class Concur < Formula
   url "https://github.com/MatanSilver/concur/archive/v0.1.0.tar.gz"
   version "0.1.0"
   sha256 "5d0469b45f8d40521e9ef3296ffb3791e0384ade7893a880f24eda10a91f2547"
+  depends_on "go" => :build
   def install
     system "go", "build"
     bin.install "concur"
