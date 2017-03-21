@@ -1,5 +1,3 @@
-https://github.com/tdenniston/bish
-
 class Bish < Formula
   homepage "://github.com/tdenniston/bish"
   url "https://github.com/tdenniston/bish/archive/v0.1.tar.gz"
