@@ -1,4 +1,4 @@
-class LibUI < Formula
+class Libui < Formula
   homepage "://github.com/andlabs/libui"
   url "https://github.com/andlabs/libui/archive/alpha3.1.zip"
   version "0.3.1"
