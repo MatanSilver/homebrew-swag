@@ -4,16 +4,14 @@ class Libui < Formula
   version "0.3.1"
   sha256 "0b5c64363c61f3f679672761979afc824ca87df801c5875297343e079afbc8ba"
   def install
-    system "mkdir", "build"
-    system "cd", "build"
-    system "cmake", ".."
+    system "mkdir build"
+    system "cd build"
+    system "cmake .."
     system "make"
-    system "cmake", "-DBUILD_SHARED_LIBS=OFF", ".."
+    system "cmake -DBUILD_SHARED_LIBS=OFF .."
     system "make"
-    system "cp", "out/libui.A.dylib", "/usr/local/lib/libui.A.dylib"
-    system "cp", "out/libui.a", "/usr/local/lib/libui.a"
-    system "cp", "out/libui.dylib", "/usr/local/lib/libui.dylib"
-    system "cp", "../ui.h", "/usr/local/include/ui.h"
-    system "cp", "../ui_darwin.h", "/usr/local/include/ui_darwin.h"
+    include.install "out/libui.A.dylib"
+    include.install "out/libui.a"
+    lib.install "../ui.h"
   end
 end
