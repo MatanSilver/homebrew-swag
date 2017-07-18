@@ -5,8 +5,7 @@ class Libui < Formula
   sha256 "0b5c64363c61f3f679672761979afc824ca87df801c5875297343e079afbc8ba"
   def install
     system "mkdir build"
-    #system "cd build"
-    Dir.chdir("build")
+    system "cd build"
     system "cmake .."
     system "make"
     system "cmake -DBUILD_SHARED_LIBS=OFF .."
