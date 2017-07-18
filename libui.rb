@@ -11,9 +11,9 @@ class Libui < Formula
     system "make"
     system "cmake -DBUILD_SHARED_LIBS=OFF .."
     system "make"
-    system "cp libui.A.dylib /usr/local/lib/libui.A.dylib"
-    system "cp libui.a /usr/local/lib/libui.a"
-    system "cp libui.dylib /usr/local/lib/libui.dylib"
+    system "cp out/libui.A.dylib /usr/local/lib/libui.A.dylib"
+    system "cp out/libui.a /usr/local/lib/libui.a"
+    system "cp out/libui.dylib /usr/local/lib/libui.dylib"
     system "cp ../ui.h /usr/local/include/ui.h"
     system "cp ../ui_darwin.h /usr/local/include/ui_darwin.h"
   end
