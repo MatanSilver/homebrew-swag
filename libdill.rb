@@ -14,7 +14,7 @@ class Libdill < Formula
     #system "cmake -DBUILD_SHARED_LIBS=OFF ."
     system "make"
     system "make", "check"
-    system "sudo", "make", "install"
+    system "make", "install"
     #include.install "out/libui.A.dylib"
     #include.install "out/libui.a"
     #lib.install "ui.h"
