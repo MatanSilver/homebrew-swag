@@ -11,9 +11,9 @@ class Libui < Formula
     system "make"
     system "cmake -DBUILD_SHARED_LIBS=OFF ."
     system "make"
-    include.install "out/libui.A.dylib"
-    include.install "out/libui.a"
-    lib.install "ui.h"
-    lib.install "ui_darwin.h"
+    lib.install "out/libui.A.dylib"
+    lib.install "out/libui.a"
+    include.install "ui.h"
+    include.install "ui_darwin.h"
   end
 end
