@@ -13,7 +13,7 @@ class Libdill < Formula
     system "./configure"
     #system "cmake -DBUILD_SHARED_LIBS=OFF ."
     system "make"
-    system "make", "check"
+    #system "make", "check"
     system "make", "install"
     #include.install "out/libui.A.dylib"
     #include.install "out/libui.a"
