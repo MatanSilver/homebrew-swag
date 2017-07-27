@@ -3,6 +3,11 @@ class Libdill < Formula
   url "https://github.com/sustrik/libdill/archive/1.6.zip"
   version "1.6"
   sha256 "d0a525e5623764a5a4c7458752520316f67985196661a9028a1676ca1db98cc0"
+
+  depends_on "autoconf" => :build
+  depends_on "automake" => :build
+  depends_on "libtool" => :build
+
   def install
     system "./autogen.sh"
     system "./configure"
