@@ -8,7 +8,7 @@ class Libui < Formula
 
   def install
     system "cmake ."
-    system "make"
+    system "make -j6"
     lib.install "out/libui.A.dylib"
     lib.install "out/libui.a"
     include.install "ui.h"
