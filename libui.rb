@@ -9,8 +9,6 @@ class Libui < Formula
   def install
     system "cmake ."
     system "make"
-    system "cmake -DBUILD_SHARED_LIBS=OFF ."
-    system "make"
     lib.install "out/libui.A.dylib"
     lib.install "out/libui.a"
     include.install "ui.h"
