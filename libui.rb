@@ -10,7 +10,7 @@ class Libui < Formula
     system "cmake ."
     system "make -j6"
     lib.install "out/libui.A.dylib"
-    lib.install "out/libui.a"
+    #lib.install "out/libui.a"
     include.install "ui.h"
     include.install "ui_darwin.h"
   end
