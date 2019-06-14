@@ -1,8 +1,8 @@
 class Libdill < Formula
   homepage "://github.com/sustrik/libdill"
-  url "https://github.com/sustrik/libdill/archive/1.6.zip"
-  version "1.6"
-  sha256 "d0a525e5623764a5a4c7458752520316f67985196661a9028a1676ca1db98cc0"
+	url "https://github.com/sustrik/libdill/archive/2.14.zip"
+	version "2.14"
+  sha256 "d958f29e0e4b2e09da44cd9bd284c65795d6c472"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
